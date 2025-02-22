@@ -1,0 +1,259 @@
+.mobile-shaping, .mobile-testimonials, .mobile-footer, .mobile-hr, .mobile-copyright{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  @font-face {
+    font-family: inter;
+    src: url(fonts/inter/Inter-VariableFont_opsz\wght.ttf);
+  }
+  @font-face {
+    font-family: inria;
+    src: url(fonts/Inria_Serif/InriaSerif-Light.ttf);
+  }
+  @font-face {
+    font-family: helvetica;
+    src: url(fonts/HelveticalNeue/HelveticaNeueLight.otf);
+  }
+  .min-spacer {
+    height: 30vh;
+  }
+
+  .minimized-space {
+    height: 20vh;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, height 0.3s ease;
+    padding: 2vw 3vw;
+    z-index: 998;
+    background-color: transparent;
+  }
+  header .logo img {
+    width: 10vmax;
+    height: 3vmax;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  header .menu img {
+    width: 7vmax;
+    height: 4vmax;
+    cursor: pointer;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+
+  header.scrolled {
+    background-color: orange;
+    height: 10%;
+  }
+
+  header.scrolled .logo img {
+    width: 7vmax;
+    height: 2vmax;
+  }
+
+  header.scrolled .menu img {
+    width: 5vmax;
+    height: 3vmax;
+  }
+
+  .boxes{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Hide .front-page-engagements on mobile devices */
+@media (max-width: 767px) {
+    .front-page-engagements {
+      display: none;
+    }
+    .front-testimonials{
+        display: none;
+    }
+    /* Mobile Shaping the fututre with industry  */
+    .mobile-shaping, .mobile-testimonials{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4%;
+      gap: 20px;
+    }
+    .mobile-shaping h1{
+      font-size: 2rem;
+      font-family: inter;
+    }
+    .mobile-shaping .shape1{
+
+      padding: 5%;
+      border-radius: 10px;
+    }
+  
+    .alliances .our-alliances{
+      font-size: 2rem;
+      width: 100%;
+    }
+    
+    .item {
+      width: 150px;
+      height: 100px;
+    }
+
+    /* clients  */
+
+
+    .mobile-testimonials h1{
+      font-size: 3rem;
+      font-family: inter;
+    }
+    .mobile-testimonials .shape1{
+
+      padding: 5%;
+      border-radius: 10px;
+    }
+    .connection-with-us{
+      margin: 10%;
+      font-size: 2rem;
+      gap: 100%;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+    .connect-with-us .connect-us h1{
+      font-size: 2.5rem;
+      margin-left: -35%;
+      margin-top: 10%;
+    }
+    .connect-with-us .arrow-symbol{
+      display: none;
+    }
+
+    /* footer */
+    .footer{
+      display: none;
+    }
+    .mobile-footer{
+      margin: 0;
+      padding: 3%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .mobile-footer .mobile-footer-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .mobile-connect{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .mobile-footer .mobile-footer-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+  
+      width: 100%;
+    }
+    .mobile-footer .mobile-footer-content .footer2 .mobile-footer-logo img{
+      width: 20vmax;
+      height: 6vmax;
+    }
+    .mobile-divider{
+      width: 100%;
+      height: 1%;
+      background-color: black;
+    }
+    .footer2{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 10%;
+     }
+     .footer2 .mobile-social{
+       display: flex;
+       flex-direction: row;
+     }
+    .footer1{
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     width: 100%;
+    }
+    .footer1 .mobile-social{
+      display: flex;
+      flex-direction: row;
+    }
+.mobile-footer-menu-links{
+  display: flex;
+  justify-content: space-between;
+width: 80%;
+}
+    .mobile-connect{
+      display: flex;
+      flex-direction: column;
+    }
+    .mobile-links1, .mobile-links2{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .mobile-hr{
+      display: block;
+    }
+    .mobile-copyright{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text-div {
+      height: 4vh;
+      overflow: hidden;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* About us starts */
+    .who-we-are{
+      flex-direction: column;
+      gap: 40px;
+    }
+    .what-we-do h1{
+      font-size: 3rem;
+    }
+    .what-we-do .work1 h2 {
+      font-size: 5vmax;
+    }
+    .harshad-sangle span, .vrushali-sangle span{
+      top: -15%;
+    }
+    /* About us ends */
+
+  }
