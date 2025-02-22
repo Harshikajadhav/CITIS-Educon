@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css ">
+    <link rel="stylesheet" href="mobile.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Front Page</title>
 </head>
@@ -83,23 +83,30 @@
     </div>
 </section>
 
-
         <section class="certifications-we-offer">
             <div class="mobile-spacer"></div>
-            <h1 class="certifications-heading">Engagements</h1>
-            <div class="engagements-div-main-page">
-                <div class="engagements1">
-                    <h1>University progression</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium delectus esse veritatis dignissimos officiis totam rerum ex perferendis, doloremque unde aliquam laboriosam debitis ipsum sunt nisi facere autem? Vero, pariatur?</p>
-                </div>
-                <div class="engagements1">
-                    <h1>Vocational Education</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, qui sit quae fuga labore, commodi hic cum explicabo aliquid quod, enim ex corrupti ipsa. Recusandae tempore sapiente reprehenderit vero possimus.</p>
-                </div>
-                <div class="engagements1">
-                    <h1>Center of Excellence</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae et ducimus facilis veritatis nobis porro cumque molestiae, veniam omnis fugiat? Maxime recusandae, optio explicabo dignissimos nobis doloremque eligendi similique sint?</p>
-                </div>
+            <h1 class="certifications-heading">Certifications we offer</h1>
+            <div class="certificates-logo">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
+                <img src="images/logo.png">
             </div>
         </section>
 
@@ -142,8 +149,6 @@
   </section>
 
 
-
-  
   <hr class="mobile-hr">
   <section class="mobile-footer">
     <div class="mobile-footer-content">
@@ -187,11 +192,22 @@
     </section>
     <hr class="mobile-hr">
 
-
-
   <br><br><br><br>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    <script>
+        var tl = gsap.timeline();
+        tl.from(".certifications-we-offer .certifications-heading", {
+            x: -100,
+            delay: 0.3,
+            opacity: 0,
+        })
+        tl.from(".certifications-we-offer .certificates-logo img",{
+            y: 50,
+            opacity: 0,
+            stagger: 0.1
+        })
+    </script>
 </body>
 </html>

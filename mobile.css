@@ -1,4 +1,4 @@
-.mobile-shaping, .mobile-testimonials, .mobile-footer, .mobile-hr, .mobile-copyright{
+.mobile-shaping, .mobile-testimonials, .mobile-footer, .mobile-hr, .mobile-copyright, .mobile-founder-message, .mobile-spacer{
   display: none;
 }
 
@@ -17,6 +17,10 @@
   }
   .min-spacer {
     height: 30vh;
+  }
+  .mobile-spacer{
+    display: block;
+    height: 10vh;
   }
 
   .minimized-space {
@@ -45,13 +49,13 @@
     background-color: transparent;
   }
   header .logo img {
-    width: 10vmax;
-    height: 3vmax;
+    width: 13vmax;
+    height: 4vmax;
     transition: width 0.3s ease, height 0.3s ease;
   }
   header .menu img {
-    width: 7vmax;
-    height: 4vmax;
+    width: 10vmax;
+    height: 6vmax;
     cursor: pointer;
     transition: width 0.3s ease, height 0.3s ease;
   }
@@ -67,8 +71,8 @@
   }
 
   header.scrolled .menu img {
-    width: 5vmax;
-    height: 3vmax;
+    width: 7vmax;
+    height: 20vmax;
   }
 
   .boxes{
@@ -226,7 +230,7 @@ width: 80%;
       justify-content: center;
     }
     .text-div {
-      height: 4vh;
+      height: 3.1vh;
       overflow: hidden;
     }
 
@@ -243,17 +247,122 @@ width: 80%;
     /* About us starts */
     .who-we-are{
       flex-direction: column;
+      padding: 10px;
       gap: 40px;
     }
+    .who-we-are-img img{
+      height: 10%;
+      width: 100%;
+    }
+
     .what-we-do h1{
-      font-size: 3rem;
+      font-size: 2rem;
+    }
+    .what-we-do .work1{
+      width: 200px;
+      height: 300px;
     }
     .what-we-do .work1 h2 {
-      font-size: 5vmax;
+      font-size: 3vmax;
     }
     .harshad-sangle span, .vrushali-sangle span{
-      top: -15%;
+      display: none;
     }
+    .vission-mission{
+      flex-direction: column;
+    }
+    .circle-vision {
+      top: 39%;
+      left: -15%;
+    }
+    
+    .circle-mission {
+      bottom: 40%;
+      right: -8%; /* Position the mission circle on the right */
+    }
+
+    
+/* Founder's message starts */
+.founder-message{
+  display: none;
+}
+.mobile-founder-message{
+  padding-top: 30%;
+  padding-bottom: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-founder-message h1{
+  margin-top: 10%;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 10vw;
+}
+.mobile-founder-message .mobile-messages-founder{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-items: center;
+  align-items: center;
+}
+.mobile-founder-message .mobile-messages-founder .mobile-harshad-sangle {
+  background-color: #1A1A2E;
+  z-index: 1;
+  width: 80%;
+  margin: 3%;
+  padding: 4%;
+  align-self: flex-start; /* Moves it slightly to the left */
+  margin-left: 10%;
+  border-radius: 20px;
+}
+.mobile-harshad-sangle h2, .mobile-vrushali-sangle h2{
+  text-align: right;
+  font-size: 5vw;
+  margin-top: 5%;
+}
+.mobile-harshad-sangle, .mobile-vrushali-sangle{
+  position: relative;
+  z-index: 1; /* Background lowest */
+}
+@font-face {
+  font-family: haggu;
+  src: url(fonts/space/SpaceGrotesk-VariableFont_wght.ttf);
+}
+.mobile-harshad-sangle span, .mobile-vrushali-sangle span{
+display: none;
+}
+
+
+.mobile-harshad-sangle p, .mobile-harshad-sangle h2,
+.mobile-vrushali-sangle p, .mobile-vrushali-sangle h2 {
+  position: relative;
+  z-index: 3; /* Text is above span */
+}
+.mobile-founder-message .mobile-messages-founder .mobile-vrushali-sangle {
+  background-color: #16213E;
+  width: 80%;
+  margin-top: 3%;
+  padding: 4%;
+  border-radius: 20px;  
+}
+
+/* Founder's message ends */
+
     /* About us ends */
+
+    .certifications-we-offer .certifications-heading{
+      font-size: 150%;
+    }
+    .certifications-we-offer .engagements-div-main-page{
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      height: 30%; 
+    }
+    .certifications-we-offer .engagements-div-main-page .engagements1{
+      width: 100%;
+      height: 100%;
+    }
 
   }
