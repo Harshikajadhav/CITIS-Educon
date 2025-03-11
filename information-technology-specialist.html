@@ -6,7 +6,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
     <title>Front Page</title>
+    <style>
+      .card {
+          border: 1px solid black;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .card img {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+      }
+      .card-body {
+          padding: 20px;
+      }
+      .btn {
+          border-radius: 5px;
+      }
+  </style>
+
 </head>
 <body>
   <header>
@@ -63,72 +86,53 @@
   </div>
 </section>
 
-        <section class="certifications-we-offer">
-            <div class="mobile-spacer"></div>
-            <h1 class="certifications-heading">Certifications we offer</h1>
-            <div class="genre-main">
-              <div class="genre" onclick="redirectTo('microsoft.html')">
-                <img src="images/certifications/microsoft.png">
-                <p>Microsoft</p>
+<!-- Section starts -->
+ <section class="certificate-details">
+  <h1 style="padding-top: 140px;"><img src="images/certifications/its.png" alt="Information Technology Specialist" style="width: 30%; height: 30%"></h1>
+  <h2><center>Design and make a better world. Start with certification</center></h2>
+  <br><br>
+  
+  <div class="p">
+    <p>The Information Technology Specialist program is a way for candidates to validate foundational IT skills sought after by employers. The IT Specialist program is aimed at individuals who are considering or just beginning a path to a career in information technology.</p>
+    <p>While meaningful to any job seekers and candidates interested in IT careers, these exams are best suited for ages 14 and up. No Bachelor’s degree or other prerequisites are necessary, other than what is called out in the Objective Domains, which are linked below. These stackable exams are valid from the date they are passed and are a one-time issuance. The target candidate has approximately 150 hours of instruction and hands-on experience with the exam topic.</p>
+</div>
+
+
+<div class="impact-microsoft">
+    
+    <br><br><div class="impact-microsoft">
+        
+     <center><h2>Available Certifications</h2>  </center>
+            <div class="certificate-images" style="align-items: center; justify-content: center;">
+                <h4><center>Computational Thinking</center></h4>
+                <h4><center>Cyber Security</center></h4>
+                <h4><center>Data Analytics</center></h4>
+                <h4><center>Databases</center></h4>
+                <h4><center>Device Configuration & Management</center></h4>
+                <h4><center>HTML & CSS</center></h4>
+                <h4><center>HTML5 Application Development</center></h4>
+                <h4><center>Java</center></h4>
+                <h4><center>JavaScript</center></h4>
+                <h4><center>Networking</center></h4>
+                <h4><center>Python</center></h4>
+                <h4><center>Software Development</center></h4>
             </div>
-            
-                  <div class="genre" onclick="redirectTo('autodesk.html')">
-                      <img src="images/certifications/autodesk.png">
-                      <p>Autodesk</p>
-                  </div>
-                  <div class="genre" onclick="redirectTo('adobe.html')">
-                      <img src="images/certifications/adobe.png">
-                      <p>Adobe</p>
-                  </div>
-                  <div class="genre" onclick="redirectTo('information-technology-specialist.html')">
-                      <img src="images/certifications/its.png">
-                      <p>Information Technology Specialist</p>
-                  </div>
-                  <div class="genre" onclick="redirectTo('ic3.html')">
-                    <img src="images/certifications/ic3.png">
-                    <p>Information & Communication Technology</p>
-                  </div>
+            </div><br><br>
 
-                  <div class="genre">
-                    <img src="images/certifications/comptia.png">
-                    <p>CompTIA</p>
-                </div>
-                <div class="genre" onclick="redirectTo('entrepreneurship-and-small-business.html')">
-                    <img src="images/certifications/esb.png">
-                    <p>Entrepreneurship and Small Business</p>
-                </div>
-                <div class="genre" onclick="redirectTo('intuit.html')">
-                    <img src="images/certifications/Intuit.svg.png">
-                    <p>Intuit</p>
-                </div>
-                <div class="genre">
-                    <img src="images/certifications/apple.png">
-                    <p>Apple</p>
-                </div>
-                <div class="genre" onclick="redirectTo('cisco.html')">
-                  <img src="images/certifications/cisco.jpg">
-                  <p>Cisco</p>
-                </div>
+        <div class="sample-certificate">
+            <h1>Sample Certificate</h1>
+            <center><img src="images/certificates-content/its/certificate.png" alt=""></center>
+        </div>
+</div>
+ 
+ </section>
+<!-- Section ends -->
 
-                <div class="genre" onclick="redirectTo('project-management-institute.html')">
-                  <img src="images/certifications/pmi.svg">
-                  <p>Project Management Institute</p>
-              </div>
-              <div class="genre" onclick="redirectTo('unity.html')">
-                  <img src="images/certifications/unity.png">
-                  <p>Unity</p>
-              </div>
-              <div class="genre" onclick="redirectTo('communication-skills-for-business.html')">
-                  <img src="images/certifications/csb.png">
-                  <p>Communication Skills for Business</p>
-              </div>
-              <div class="genre" onclick="redirectTo('ethics-and-behaviour.html')">
-                  <img src="images/certifications/ethics.png">
-                  <p>Ethics and Behaviour Certificate</p>
-              </div>
-              </div>
-            
-        </section>
+
+
+
+<br><br><br><br>
+
         <section class="footer">
           <div class="divider"></div>
           <div class="footer-content">
@@ -211,32 +215,9 @@
           <br><br><br><br>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
     <script src="script.js"></script>
-    <script>
-
-function redirectTo(url) {
-    window.location.href = url;
-}
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    gsap.set(".certifications-we-offer .certifications-heading", { opacity: 0, x: -100 });
-    gsap.set(".genre img", { opacity: 0, y: 50 });
-
-    var tl = gsap.timeline();
-    tl.to(".certifications-we-offer .certifications-heading", {
-        x: 0,
-        opacity: 1,
-        duration: 1
-    }).to(".genre img", {
-        y: 0,
-        opacity: 1,
-        stagger: 0.1,
-        duration: 0.5
-    });
-});
-
-    </script>
+   
 </body>
 </html>

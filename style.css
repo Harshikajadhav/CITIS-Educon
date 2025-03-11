@@ -107,7 +107,7 @@ header.scrolled .menu img {
   height: 10vh;
   overflow: hidden;
 }
-.text-div h1 a{
+.elem h1 a{
   text-decoration: none;
   color: white;
 }
@@ -117,7 +117,7 @@ header.scrolled .menu img {
   font-size: 4.2vw;
   transition: all ease-out 0.5s;
 }
-.text-div:hover h1 a{
+.elem:hover h1 a{
   color: orange;
 }
 .close-menu {
@@ -223,7 +223,7 @@ header.scrolled .menu img {
 
 }
 .box1 .engagement{
-    height: 90%;
+    height: 60%;
     width: 90%;
     border-radius: 20px;
     box-shadow: 0px 0px 40px rgb(78, 78, 78);
@@ -261,9 +261,7 @@ header.scrolled .menu img {
 
 
 
-/* Alliances */
-/* Front-page our alliances starts */
-/* Alliances */
+/* Clients */
 /* Front-page our alliances starts */
 
 *,
@@ -271,6 +269,103 @@ header.scrolled .menu img {
 *::after {
   box-sizing: border-box;
 }
+
+.our-alliances {
+  text-align: center;
+  font-family: helvetica;
+  font-size: 3vw;
+}
+
+.wrapperr {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  margin-top: 5rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeftt {
+  to {
+    left: -200px;
+  }
+}
+
+.itemm {
+  width: 200px;
+  height: 100px;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeftt;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemm img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures the logo fits nicely within the div */
+}
+
+.item11 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item22 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item33 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item44 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item55 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item66 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item77 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item88 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+
+/* Front-page our alliances ends */
+
+
+
+
+
+
+
+
+
+
+
+
 
 .our-alliances {
   text-align: center;
@@ -323,38 +418,40 @@ header.scrolled .menu img {
 }
 
 .item1 {
-  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
 }
 
 .item2 {
-  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
 }
 
 .item3 {
-  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
 }
 
 .item4 {
-  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
 }
 
 .item5 {
-  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
 }
 
 .item6 {
-  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
 }
 
-.item7 {
-  animation-delay: calc(30s / 8 * (8 - 7) * -1);
-}
-
-.item8 {
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);
-}
 
 /* Front-page our alliances ends */
+
+
+
+
+
+
+
+
+
 
 
 /* Testimonials */
@@ -384,14 +481,19 @@ header.scrolled .menu img {
 
 .testimonial1,
 .testimonial2 {
-    height: 10vw;
-    width: 30rem;
+    height: 16vw;
+    width: 35rem;
     border-radius: 15px;
     padding: 2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    font-family: helvetica;
 }
-
+.testimonial1 span, .testimonial2 span{
+  font-size: 1.3rem;
+  font-family: inria;
+}
 .testimonial1 {
     background-color: #BC5441;
     align-self: flex-start; /* Align to the left */
@@ -422,6 +524,7 @@ header.scrolled .menu img {
 }
 
 .connect-with-us .connection-with-us .heard-enough h1 {
+  font-size: 3vw;
   width: 30%;
   text-transform: capitalize;
 }
@@ -441,12 +544,60 @@ header.scrolled .menu img {
   border-radius: 50%;
   transition: transform 0.2s linear; /* Smooth transition for scaling */
 }
+.arrow-symbol a, .social a{
+  text-decoration: none;
+  color: black;
+}
 
 .arrow-symbol:hover {
   transform: scale(1.5); /* Scale the arrow on hover */
 }
 /* Front-page connect with us ends */
 
+/* Mobile contact us section below */
+
+.mobile-connect-with-us {
+  height: 40%;
+  font-family: helvetica;
+  font-weight: 300;
+  margin-left: -3%;
+  margin-top: 10%;
+}
+
+.mobile-connect-with-us .mobile-connection-with-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15%;
+}
+
+.mobile-connect-with-us .mobile-connection-with-us .mobile-heard-enough h1 {
+  font-size: 3vw;
+  width: 30%;
+  text-transform: capitalize;
+}
+
+.mobile-connect-with-us .mobile-connect-us h1 {
+  font-size: 6vw;
+  margin-left: -5%;
+  text-decoration: underline;
+  text-decoration-color: #EC6E23;
+  text-decoration-thickness: 0.3rem;
+  text-underline-offset: 0.8rem;
+}
+
+.mobile-connect-with-us .mobile-arrow-symbol {
+  font-size: 4vw;
+  background-color: #FFB74A;
+  border-radius: 50%;
+  transition: transform 0.2s linear; /* Smooth transition for scaling */
+}
+
+.mobile-arrow-symbol:hover {
+  transform: scale(1.5); /* Scale the arrow on hover */
+}
+
+/* Mobile contact us section below */
 
 
 
@@ -477,15 +628,15 @@ header.scrolled .menu img {
   flex-direction: column;
   gap: 5vh;
   font-family: inria;
-  padding: 1%;
+  padding: 5%;
 }
 .who-we-are .who-we-are-heading h1{
   font-size: 4vmax;
 }
 
-
-
-
+.who-we-are .who-we-are-heading p{
+  font-size: 1vmax;
+}
 
 
 
@@ -545,7 +696,7 @@ header.scrolled .menu img {
 }
 
 .what-we-do .work1 p {
-  font-size: 1.5vmax;
+  font-size: 1vmax;
   opacity: 0; /* Hide by default */
   position: absolute;
   top: 50%;
@@ -575,7 +726,7 @@ header.scrolled .menu img {
 }
 
 .vission-mission .vision {
-  background-color: skyblue;
+  background: radial-gradient(skyblue,transparent);
   color: black;
   text-align: justify;
   padding: 5%;
@@ -584,7 +735,7 @@ header.scrolled .menu img {
 }
 
 .vission-mission .mission {
-  background-color: orangered;
+  background: radial-gradient(#BC5441, transparent);
   color: black;
   margin-top: -10%;
   text-align: justify;
@@ -615,6 +766,7 @@ header.scrolled .menu img {
 
 
 
+
 .text {
   position: absolute;
   width: 100%;
@@ -624,6 +776,7 @@ header.scrolled .menu img {
   font-size: 17px;
   animation: textRotation 8s linear infinite;
 }
+
 
 @keyframes textRotation {
   to {
@@ -721,6 +874,7 @@ header.scrolled .menu img {
 .certifications-we-offer{
   font-family: helvetica;
   margin: 12% 10%;
+  /* height: 100vh; */
 }
 .certifications-we-offer .certifications-heading{
   text-align: center;
@@ -728,17 +882,84 @@ header.scrolled .menu img {
   letter-spacing: 3px;
   margin-bottom: 5%;
 }
-.certifications-we-offer .certificates-logo{
-  text-align: center;
+
+.genre-main {
+  margin: 3% 0%;
+  display: flex;
+  justify-content: center; /* Center the divs */
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 5%; /* Add spacing between rows */
+}
+.genre {
+  height: 5%;
+  width: 230px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
-.certificates-logo img{
-  height: 5vmax;
-  width: 15vmax;
-  margin: 2%;
+
+.genre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Background overlay */
+  opacity: 0; /* Hidden initially */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+  z-index: 2; /* Ensure it covers the image */
 }
+
+
+.genre img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+  position: relative;
+  z-index: 1; /* Keep image below the overlay */
+}
+
+.genre p {
+  position: absolute;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3; /* Keep text above overlay */
+}
+/* Hover effect */
+.genre:hover::before {
+  opacity: 1; /* Show background overlay */
+}
+
+.genre:hover img {
+  opacity: 0.3; /* Dim the image */
+}
+
+.genre:hover p {
+  opacity: 1; /* Show text */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 
 
 /* Certification - Main page ends */
@@ -749,7 +970,7 @@ header.scrolled .menu img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2%;
+  gap: 10%;
 }
 
 .certifications-we-offer .engagements-div-main-page .engagements1 {
@@ -782,14 +1003,38 @@ header.scrolled .menu img {
   margin-top: 10px;
   opacity: 0;
   max-height: 0;
-  overflow: hidden;
   transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
 }
+
 
 .certifications-we-offer .engagements-div-main-page .engagements1:hover p {
   opacity: 1;
   max-height: 200px; /* Adjust height as needed */
 }
+/* Initially hide the button */
+.certifications-we-offer .engagements-div-main-page .engagements1 .engage-button {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+}
+
+/* Show button on hover */
+.certifications-we-offer .engagements-div-main-page .engagements1:hover .engage-button {
+  opacity: 1;
+  max-height: 50px; /* Adjust height based on button size */
+}
+
+/* Optional: Button styling */
+.certifications-we-offer .engagements-div-main-page .engagements1 .explore {
+
+  padding: 5px;
+}
+
+.certifications-we-offer .engagements-div-main-page .engagements1 .explore:hover {
+  background-color:black;
+}
+
 
 /* Engagements Main section ends */
 
@@ -872,8 +1117,8 @@ header.scrolled .menu img {
 }
 .cs1{
   flex-shrink: 0;
-  width: 40vmax; 
-  height: 40vmax;
+  width: 30vmax; 
+  height: 30vmax;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -954,9 +1199,12 @@ margin-left: 10%;
 
 /* Products starts */
 .products {
-  margin: 0 15%;
-  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
 
 .p-heading {
   font-size: 4vw;
@@ -978,7 +1226,7 @@ margin-left: 10%;
   justify-content: center;
 }
 
-.product .explore {
+.product .explore,  .engagements1 .explore {
   align-self: flex-end;
   background-color: transparent;
   border-radius: 20px;
@@ -993,7 +1241,7 @@ margin-left: 10%;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
-.product .explore i {
+.product .explore i, .engagements1 .explore i {
   font-size: 1.5vw;
   border: 1px solid black;
   border-radius: 50%;
@@ -1001,30 +1249,29 @@ margin-left: 10%;
 }
 
 /* Hover effect */
-.product .explore:hover {
+.product .explore:hover, .engagements1 .explore:hover {
   background-color: black; /* Change background to black */
   color: white; /* Change text color to white */
 }
 
-.product .explore:hover i {
+.product .explore:hover i, .engagements1 .explore:hover i {
   border-color: white; /* Change icon border color to white */
 }
 
 /* Remove any active/focus effects */
-.product .explore:active,
-.product .explore:focus {
+.product .explore:active, .engagements1 .explore:active,
+.product .explore:active, .engagements1 .explore:focus {
   outline: none;
   box-shadow: none;
   background-color: black; /* Keep background black on active/focus */
   color: white; /* Keep text white on active/focus */
 }
-
 .product-settings {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-left: 30px;
-  padding-top: 40px;
+  align-items: center;
+  justify-content: center; /* Ensure it's centered */
+  gap: 50px; /* Maintain spacing between left and right */
+  width: 100%;
 }
 
 .product-settings .right-products .product {
@@ -1032,7 +1279,7 @@ margin-left: 10%;
   border: 1px solid black;
   border-radius: 20px;
   height: 100%;
-  width: 90%;
+  width: 50%;
   margin-top: 20%;
 }
 
@@ -1052,14 +1299,30 @@ margin-left: 10%;
   padding: 5%;
   border-radius: 20px;
   height: 100%;
-  width: 85%;
+  width: 50%;
 }
 
 .left-products {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  margin-left: 5%;
+  gap: 50px;
 }
+.right-products{
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+  gap: 50px;
+  width: 50%;
+}
+
+.left-products, .right-products {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 /* Products ends */
 
@@ -1127,7 +1390,7 @@ margin-left: 10%;
   display: block;
   width: 20%;
   padding: 10px;
-  background-color: white;
+  background-color: transparent;
   color: black;
   border: none;
   border-radius: 50px;
@@ -1195,7 +1458,10 @@ margin-left: 10%;
   list-style-type: none;
   gap: 2px;
 }
-
+.links1 a, .links2 a, .mobile-links1 a, .mobile-links2 a{
+  text-decoration: none;
+  color: black;
+}
 .copyrights{
   display: flex;
   text-align: center;
@@ -1208,19 +1474,107 @@ margin-left: 10%;
 
 
 
-
-
-
-
-
-
-
-
-
-/* Page 1 code starts */
-.page1, .page2, .page3 {
-  height: 100vh;
-  width: 100%;
+/* Certificate other details starts here  */
+.certificate-details{
+  margin: 0 10%;
+}
+.certificate-details h1{
+  font-size: 4vw;
+  font-weight: 400;
+  font-family: helvetica;
+  text-align: center;
 }
 
-/* Page 1 code ends */
+.certificate-details .p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.impact-microsoft h1{
+  font-size: 2vw;
+  font-family: helvetica;
+  text-align: center;
+}
+.points-microsoft{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin-top: 5%;
+}
+.points-microsoft img{
+  width: 100%;
+  height: 100%;
+}
+.points-microsoft .micro-left-side{
+  width: 60%;
+}
+.points-microsoft .micro-right-side{
+  width: 40%;
+}
+.another-section{
+  margin-top: 10%;
+}
+.another-section-p{
+  margin: 0 15%;
+}
+.another-section .micro-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  margin: 0 20%;
+}
+.another-section .micro-img img{
+  width: 20%;
+  height: 20%;
+}
+
+/* Microsoft second certificate starts */
+.certificate-images{
+  margin: 0 2%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.certificate-images h4{
+  padding: 1%;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 20%;
+}
+.certificate-images img{
+  width: 100%;
+  height: 100%;
+}
+.unity-certificate-section{
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.unity-certificates{
+  display: flex;
+}
+.unity-certificates .img-here{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.unity-certificates .img-size-decrease img{
+  width: 50%;
+  height: 50%;
+}
+.unity-certificates .img-content-here{
+  width: 50%;
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+}
+
+/* Microsoft second certificate ends */
+/* Certificate other details ends here  */

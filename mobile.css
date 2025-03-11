@@ -1,4 +1,4 @@
-.mobile-shaping, .mobile-testimonials, .mobile-footer, .mobile-hr, .mobile-copyright, .mobile-founder-message, .mobile-spacer{
+.mobile-shaping, .mobile-testimonials, .mobile-footer, .mobile-hr, .mobile-copyright, .mobile-founder-message, .mobile-spacer, .mobile-connect-with-us{
   display: none;
 }
 
@@ -79,12 +79,17 @@
     display: flex;
     flex-direction: column;
   }
+  .elem h1 {
+    font-size: 10vw;
+    transition: all ease-out 0.5s;
+  }
 
 }
 
 /* Hide .front-page-engagements on mobile devices */
 @media (max-width: 767px) {
-    .front-page-engagements {
+  
+  .front-page-engagements {
       display: none;
     }
     .front-testimonials{
@@ -131,20 +136,15 @@
       padding: 5%;
       border-radius: 10px;
     }
-    .connection-with-us{
-      margin: 10%;
-      font-size: 2rem;
-      gap: 100%;
-      justify-content: flex-start;
-      flex-direction: column;
-    }
-    .connect-with-us .connect-us h1{
-      font-size: 2.5rem;
-      margin-left: -35%;
-      margin-top: 10%;
-    }
     .connect-with-us .arrow-symbol{
       display: none;
+    }
+    .connect-with-us .connect-us h1 {
+      font-size: 8vw;
+      text-decoration-thickness: 0.2rem;
+    }
+    .connect-with-us .connection-with-us .heard-enough h1 {
+      font-size: 5vw;
     }
 
     /* footer */
@@ -377,6 +377,9 @@ display: none;
     }
     .product-settings {
       flex-direction: column;
+    }
+    .right-products{
+      width: 150%;
     }
 
 

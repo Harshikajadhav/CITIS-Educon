@@ -130,23 +130,19 @@ menuItems.forEach(item => {
 
 
 
-
-
-// Circles for vision and mission starts here
 // Function to transform text into circular format
-function transformText(element) {
+function transformText(element, rotationAngle) {
     element.innerHTML = element.innerText
       .split("")
       .map(
-        (char, i) => `<span style="transform:rotate(${i * 10.3}deg)">${char}</span>`
+        (char, i) => `<span style="transform:rotate(${i * rotationAngle}deg)">${char}</span>`
       )
       .join("");
-  }
-  
-  // Apply to vision circle
-  const visionText = document.querySelector(".circle-vision .text");
-  transformText(visionText);
-  
-  // Apply to mission circle
-  const missionText = document.querySelector(".circle-mission .text");
-  transformText(missionText);
+}
+
+// Apply different rotation angles
+const visionText = document.querySelector(".circle-vision .text");
+transformText(visionText, 10.3);  // Works fine for Vision
+
+const missionText = document.querySelector(".circle-mission .text");
+transformText(missionText, 9.8);  // Reduced rotation for Mission to avoid overlap

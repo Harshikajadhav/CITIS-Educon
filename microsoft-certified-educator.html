@@ -6,7 +6,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
     <title>Front Page</title>
+    <style>
+      .card {
+          border: 1px solid black;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .card img {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+          height: 150px;
+          object-fit: cover;
+      }
+      .card-body {
+          padding: 20px;
+      }
+      .btn {
+          border-radius: 5px;
+      }
+  </style>
+
 </head>
 <body>
   <header>
@@ -63,72 +86,53 @@
   </div>
 </section>
 
-        <section class="certifications-we-offer">
-            <div class="mobile-spacer"></div>
-            <h1 class="certifications-heading">Certifications we offer</h1>
-            <div class="genre-main">
-              <div class="genre" onclick="redirectTo('microsoft.html')">
-                <img src="images/certifications/microsoft.png">
-                <p>Microsoft</p>
+<!-- Section starts -->
+ <section class="certificate-details">
+  <h1 style="padding-top: 140px;">MCE (Microsoft Certified Educator) Certification</h1>
+  
+
+
+<div class="impact-microsoft">
+    <br><br><h1>Close the educational technology skills gap</h2>
+        <p>The Microsoft Certified Educator Program is a professional development program that bridges the gap between technology skills and innovative teaching. Educators holding a Microsoft Certified Educator certification can prove they have the skills needed to provide rich, customized learning experiences for their students that incorporate critical 21st century skills using Microsoft tools. Benefits of implementing the Microsoft Certified Educator professional development and certification program at your institution include:</p>
+        <div class="points-microsoft">
+            <div class="micro-left-side">
+                <ul style="font-size: 1.4vw;">
+                    <li><b>Ensures faculty/staff have basic understanding of Microsoft Education tools</b> <br>
+                        </li>
+                    <li><b>
+                      Ensures faculty/staff know which Microsoft Education tools can support which specific 21st century skills</b> <br>
+                         </li>
+                    <li>
+                        <b>
+                          Provides access to free effective professional development</b><br>
+                        </li>
+                    <li>
+                        <b>
+                          Provides reliable validation of ICT investments</b> <br>
+                       </li>
+                </ul>
             </div>
-            
-                  <div class="genre" onclick="redirectTo('autodesk.html')">
-                      <img src="images/certifications/autodesk.png">
-                      <p>Autodesk</p>
-                  </div>
-                  <div class="genre" onclick="redirectTo('adobe.html')">
-                      <img src="images/certifications/adobe.png">
-                      <p>Adobe</p>
-                  </div>
-                  <div class="genre" onclick="redirectTo('information-technology-specialist.html')">
-                      <img src="images/certifications/its.png">
-                      <p>Information Technology Specialist</p>
-                  </div>
-                  <div class="genre" onclick="redirectTo('ic3.html')">
-                    <img src="images/certifications/ic3.png">
-                    <p>Information & Communication Technology</p>
-                  </div>
+            <div class="micro-right-side">
+                <img src="images/certificates-content/microsoft123.png">
+            </div>
+        </div>
 
-                  <div class="genre">
-                    <img src="images/certifications/comptia.png">
-                    <p>CompTIA</p>
-                </div>
-                <div class="genre" onclick="redirectTo('entrepreneurship-and-small-business.html')">
-                    <img src="images/certifications/esb.png">
-                    <p>Entrepreneurship and Small Business</p>
-                </div>
-                <div class="genre" onclick="redirectTo('intuit.html')">
-                    <img src="images/certifications/Intuit.svg.png">
-                    <p>Intuit</p>
-                </div>
-                <div class="genre">
-                    <img src="images/certifications/apple.png">
-                    <p>Apple</p>
-                </div>
-                <div class="genre" onclick="redirectTo('cisco.html')">
-                  <img src="images/certifications/cisco.jpg">
-                  <p>Cisco</p>
-                </div>
+<br><br><br><br>
+        <div class="sample-certificate">
+            <h1>Sample Certificate</h1>
+            <center><img src="images/certificates-content/certificate3.png" alt=""></center>
+        </div>
+</div>
+ 
+ </section>
+<!-- Section ends -->
 
-                <div class="genre" onclick="redirectTo('project-management-institute.html')">
-                  <img src="images/certifications/pmi.svg">
-                  <p>Project Management Institute</p>
-              </div>
-              <div class="genre" onclick="redirectTo('unity.html')">
-                  <img src="images/certifications/unity.png">
-                  <p>Unity</p>
-              </div>
-              <div class="genre" onclick="redirectTo('communication-skills-for-business.html')">
-                  <img src="images/certifications/csb.png">
-                  <p>Communication Skills for Business</p>
-              </div>
-              <div class="genre" onclick="redirectTo('ethics-and-behaviour.html')">
-                  <img src="images/certifications/ethics.png">
-                  <p>Ethics and Behaviour Certificate</p>
-              </div>
-              </div>
-            
-        </section>
+
+
+
+<br><br><br><br>
+
         <section class="footer">
           <div class="divider"></div>
           <div class="footer-content">
@@ -211,32 +215,9 @@
           <br><br><br><br>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
     <script src="script.js"></script>
-    <script>
-
-function redirectTo(url) {
-    window.location.href = url;
-}
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    gsap.set(".certifications-we-offer .certifications-heading", { opacity: 0, x: -100 });
-    gsap.set(".genre img", { opacity: 0, y: 50 });
-
-    var tl = gsap.timeline();
-    tl.to(".certifications-we-offer .certifications-heading", {
-        x: 0,
-        opacity: 1,
-        duration: 1
-    }).to(".genre img", {
-        y: 0,
-        opacity: 1,
-        stagger: 0.1,
-        duration: 0.5
-    });
-});
-
-    </script>
+   
 </body>
 </html>
