@@ -1577,4 +1577,23 @@ margin-left: 10%;
 }
 
 /* Microsoft second certificate ends */
+/* University Progressions */
+.new-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  margin-top: 5%;
+}
+.new-content .box{
+  background: radial-gradient(transparent,#c0686843 );
+  padding: 2%;
+  border-radius: 50px;
+}
+.new-content .box h6{
+  justify-self: center;
+}
+.new-content .box p{
+  text-align: justify;
+}
 /* Certificate other details ends here  */
